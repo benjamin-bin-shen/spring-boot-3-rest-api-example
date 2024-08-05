@@ -1,0 +1,23 @@
+### GET
+GET http://localhost:8080/api/tutorials
+
+### GET title
+GET http://localhost:8080/api/tutorials?title=updated
+
+### POST new
+POST http://localhost:8080/api/tutorials
+Content-Type: application/json
+
+{
+    "title": "spring boot 3",
+    "description": "it's a description"
+}
+
+### PUT modify
+PUT http://localhost:8080/api/tutorials/2
+Content-Type: application/json
+
+{
+    "title": "spring boot 3 (updated)",
+    "description": "it's a description of the updated book"
+}
